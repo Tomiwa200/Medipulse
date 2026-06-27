@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme inline{
+   --color-main-bg:var(--main-bg);
+   --color-bg-2:#f8f8f8;
+     --color-text-1: #131212;
+}
+
+:root{
+   --main-bg:#cad9dd;
+
+}
+
+body{
+   color: var(--text-1);
+}
