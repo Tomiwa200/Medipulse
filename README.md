@@ -1,7 +1,7 @@
 # Project Overview
 
-## Clinic Dashboard
-This project represents an **Clinic Mananagement System** to demonstrate complex state mangement, data management and application architecture and also to show how keep the UI running smoothly, handle raw data formatting, filtering, and mathematical calculations on an isolated background thread using the Web Worker API.
+## Medical Dashboard
+This project represents an **Medical Mananagement System** to demonstrate complex state mangement, data management and application architecture and also to show how keep the UI running smoothly, handle raw data formatting, filtering, and mathematical calculations on an isolated background thread using the Web Worker API.
 
 **The Dashboard visually represents a platform where medical practitioners can:**
 
