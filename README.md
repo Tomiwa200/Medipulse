@@ -28,6 +28,9 @@ npm run dev - to open project on browser
 * Used to build the dashboard UI using JSX
 * Used to build reusable components
 
+### Web Worker API
+* Used to handle heavy raw data formatting, filtering, and mathematical calculations on an isolated background to prevent the UI from freezing 
+
 ### Typescript Language
 * Enforces strict, type-safe development across the codebase.
 * It catches coding and type errors during compilation before your code is ever built or deployed.
