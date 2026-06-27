@@ -7,6 +7,7 @@ This project represents an **Medical Mananagement System** to demonstrate comple
 
 *View patients information ward  by ward
 * Browse total number of patients per ward
+* View patients' status whether Stable or Critical
 
 
 ```
@@ -19,10 +20,13 @@ First, run the development server:
 npm install- to install node modules
 npm run api - to start local database server
 npm run dev - to open project on browser
+
 ```
 
 # Tech Stack Used
 ### Reactjs Framework
+* Used to build the dashboard UI using JSX
+* Used to build reusable components
 
 ### Typescript Language
 * Enforces strict, type-safe development across the codebase.
