@@ -1,75 +1,45 @@
-# React + TypeScript + Vite
+# Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Clinic Dashboard
+This project represents an **Clinic Mananagement System** to demonstrate complex state mangement, data management and application architecture and also to show how keep the UI running smoothly, handle raw data formatting, filtering, and mathematical calculations on an isolated background thread using the Web Worker API.
 
-Currently, two official plugins are available:
+**The Dashboard visually represents a platform where medical practitioners can:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+*View patients information ward  by ward
+* Browse total number of patients per ward
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+First, run the development server:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install- to install node modules
+npm run api - to start local database server
+npm run dev - to open project on browser
+```
+
+# Tech Stack Used
+### Reactjs Framework
+
+### Typescript Language
+* Enforces strict, type-safe development across the codebase.
+* It catches coding and type errors during compilation before your code is ever built or deployed.
+
+### Zustand
+* Manages local client state.
+* Ensures persistence of items added to cart
+
+### Tanstack Query
+  * Manages remote server data
+  *  It fetches, caches, auto-refetches, and updates remote data from the database.
+    
+### TailwindCSS
+ * It is used to style components directly in the TSX files using pre-defined classes.
+
+
 
 ```
+
